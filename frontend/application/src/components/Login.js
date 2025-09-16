@@ -108,4 +108,3 @@ export default function Login({ onAuth }) {
   );
 }
 
-//rajesh@gmail.com, Rajesh
