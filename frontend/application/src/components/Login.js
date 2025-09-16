@@ -9,7 +9,7 @@ export default function Login({ onAuth }) {
   const [password, setPassword] = useState("");
   const [err, setErr] = useState("");
 
-  // ✅ Check localStorage for token on component mount
+  // Check localStorage for token on component mount
   useEffect(() => {
     const token = localStorage.getItem("token");
     const userName = localStorage.getItem("userName");
@@ -32,7 +32,7 @@ export default function Login({ onAuth }) {
         res = await API.post("/auth/login", { email, password });
       }
 
-      // ✅ Store token + user in localStorage
+      //  Store token + user in localStorage
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("userId", res.data.user.id);
       localStorage.setItem("userName", res.data.user.name);
@@ -45,7 +45,7 @@ export default function Login({ onAuth }) {
   };
 
   const logout = () => {
-    // ✅ Clear localStorage and reset auth state
+    // Clear localStorage and reset auth state
     localStorage.removeItem("token");
     localStorage.removeItem("userId");
     localStorage.removeItem("userName");
