@@ -1,0 +1,241 @@
+/* Container for the entire quiz card */
+.quiz-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
+/* Question text */
+.quiz-container h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Question paragraph */
+.quiz-container p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* Option container */
+.quiz-container label {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Option spacing */
+.quiz-container .option {
+  margin-bottom: 10px;
+}
+
+/* General button styles */
+.quiz-container button {
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+/* Start Quiz button */
+.quiz-container .start-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: #2f80ed;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.quiz-container .start-btn:hover {
+  background-color: #1366d6;
+}
+
+/* Previous button */
+.quiz-container .prev-btn {
+  margin-right: 10px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.quiz-container .prev-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Next / Submit button */
+.quiz-container .next-btn {
+  background-color: #2f80ed;
+  color: white;
+}
+
+.quiz-container .next-btn:hover {
+  background-color: #1366d6;
+}
+
+/* Retake Quiz button */
+.quiz-container .retake-btn {
+  margin-top: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.quiz-container .retake-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Certificate button */
+.quiz-container .certificate-btn {
+  margin-top: 10px;
+  background-color: #e60023;
+  color: white;
+}
+
+.quiz-container .certificate-btn:hover {
+  background-color: #b8001b;
+}
+
+/* Result screen */
+.quiz-container .result {
+  text-align: center;
+}
+
+/* Score text */
+.quiz-container .score {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Pass / Fail status */
+.quiz-container .status {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .quiz-container {
+    padding: 15px;
+  }
+
+  .quiz-container h3 {
+    font-size: 18px;
+  }
+
+  .quiz-container p {
+    font-size: 14px;
+  }
+
+  .quiz-container button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+/* General button styles */
+.quiz-container button {
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+/* Logout button */
+.logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ff4d4f;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: #d9363e;
+}
+
+/* Start quiz button */
+.start-btn {
+  margin-top: 20px;
+  background-color: #2f80ed;
+  color: white;
+  font-weight: bold;
+}
+
+.start-btn:hover {
+  background-color: #1366d6;
+}
+
+/* Next / Submit button */
+.next-btn {
+  background-color: #2f80ed; 
+  color: white;
+}
+
+.next-btn:hover {
+  background-color: #1366d6;
+}
+
+/* Previous button */
+.prev-btn {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.prev-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Retake Quiz button */
+.retake-btn {
+  margin-top: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.retake-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Certificate button */
+.certificate-btn {
+  margin-top: 10px;
+  background-color: #e60023;
+  color: white;
+}
+
+.certificate-btn:hover {
+  background-color: #b8001b;
+}
+/* Share Certificate Button */
+.quiz-container .share-btn {
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #28a745; /* Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.quiz-container .share-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}

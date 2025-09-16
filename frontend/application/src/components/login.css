@@ -1,0 +1,177 @@
+/* Full-page container */
+/* Make background cover full width and height */
+html,
+body {
+  width: 100%;
+  height: 80%;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9; /* Same background as .login-container */
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: #f9f9f9;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card-style box */
+.login-box {
+  background: #fff;
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 420px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Heading */
+.login-box h2 {
+  margin-bottom: 15px;
+  color: #111;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Labels */
+.login-box label {
+  display: block;
+  text-align: left;
+  margin: 14px 0 6px;
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+
+/* Inputs */
+.login-box input {
+  width: 380px;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.25s ease;
+  background-color: #fafafa;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  left: -5px;
+}
+
+.login-box input:focus {
+  border: 2px solid black;
+  background-color: #fff;
+}
+
+/* Error style */
+.login-box input.error-input {
+  border-color: #e60023;
+}
+
+.error {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #e60023;
+  text-align: left;
+}
+
+/* Password field container */
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  padding-right: 70px;
+}
+
+.password-wrapper .toggle-btn {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+}
+
+/* Primary button */
+.login-box button[type="submit"] {
+  width: 99%;
+  padding: 13px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background: #e60023; /* DoorDash red */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-box button[type="submit"]:hover {
+  background: #b8001b;
+}
+
+/* Switch button */
+.switch-btn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #f0f0f0;
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.switch-btn:hover {
+  background: #e2e2e2;
+}
+
+/* Logout button */
+.logout-btn{
+  background-color: #d3e3fd;
+}
+
+.logout-btn:hover {
+  background-color: #d9363e; /* Darker red */
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 28px 20px;
+  }
+  .login-box h2 {
+    font-size: 24px;
+  }
+  .login-box input {
+    font-size: 14px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
